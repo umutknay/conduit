@@ -1,6 +1,6 @@
 <template>
      
-     <form @submit.prevent="onSubmit">
+     <form @submit.prevent="save">
             <div class="well">
                 <h4>task ekleme</h4>
             </div>
@@ -31,11 +31,16 @@ export default {
         },
     methods: {
             save() {
-                this.$store.dispatch("insert", this.input);
+                 
+                this.$store.commit("inserttask", this.input)
+                 //.then(response => {
+                    this.$router.push("/tasklist")
+                //  })
+                // .catch((e) => 
+                //     alert("kayıtta bir problem var .")
+                // );
             },
-            load() {
-                this.$store.dispatch("query");
-            },
+           
             clear() {
                 this.input.taskname = "";
                 this.input.taskcomment = "";

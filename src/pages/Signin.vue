@@ -3,12 +3,12 @@
       <form @submit.prevent="onSubmit">
                     <div class="form-group">
                         <label>E-posta Adresiniz</label>
-                        <input v-model="user.email" type="email" class="form-control"
+                        <input v-model="email" type="email" class="form-control"
                                placeholder="E-posta adresinizi giriniz">
                     </div>
                     <div class="form-group">
                         <label>Şifre</label>
-                        <input v-model="user.password" type="password" class="form-control" placeholder="Şifreniz...">
+                        <input v-model="password" type="password" class="form-control" placeholder="Şifreniz...">
                     </div>
                     <div class="button-container d-flex  flex-column align-items-center">
                         <button type="submit" 
@@ -25,7 +25,15 @@
 
 <script>
 export default {
-    
+      data() {
+            return {
+                 
+                    
+                    email: "",
+                    password:""
+                
+            }
+        },
 }
 </script>
 
