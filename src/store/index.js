@@ -25,8 +25,8 @@ export const store = new Vuex.Store({
             state.taskList.push(data);
             
         },
-        insertuser(data){
-            store.state.userList.push(data);
+        insertuser(state,data){
+             state.userList.push(data);
         }
 
     },

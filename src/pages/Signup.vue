@@ -77,7 +77,7 @@ export default {
             save() {
                
                 
-                this.$store.dispatch("insertuser", {...this.input})
+                this.$store.commit("insertuser", this.input)
                 console.log(this.$store.getters.getUserList);
             },
           

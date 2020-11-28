@@ -1,5 +1,5 @@
 <template>
-
+ 
     <div class="container-fluid pt-5">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
@@ -10,16 +10,19 @@
                      <li class="nav-item"><router-link class="nav-link" to="/task">Task</router-link></li>
                 </ul>
             </div>
+            <p class="conduit"> conduit </p>  
         </nav>
+        
         <div class="mavi">
                <p class="headertext"> Epsilam </p>  
-               
-
-        </div>
+               <p class="headtext"> Create Future </p>       
+        </div> 
+            
     </div>
-
+     
+               
 </template>
-
+ 
 <script>
 export default {
     
@@ -36,6 +39,21 @@ export default {
     font-size: 40px;
     font-weight: bold;
     padding-left: 45%;
+
+}
+.headtext{
+    color: white;
+    font-size: 20px;
+    padding-left: 46%;
+    margin-bottom: 20px;
+
+}
+.conduit{
+    color:rgb(96, 143, 3);
+    font-size: 20px;
+    padding-left: 46%;
+     
+    font-weight: bold;
 
 }
 </style>
